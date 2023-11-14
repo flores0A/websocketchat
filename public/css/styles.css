@@ -1,0 +1,43 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.background-image {
+    background: url("../asset/img/fondo.jpg") no-repeat; /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /* Aplica la animación al fondo */
+    animation: animateBg 5s ease-in-out 2s infinite normal both;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.login-form {
+    position: relative;
+    background: transparent; /* Fondo transparente (negro con 50% de opacidad) */
+    padding: 60px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Valor de opacidad para los bordes */
+    color: rgba(255, 255, 255, 0.8); /* Texto blanco con 80% de opacidad */
+    text-align: center;
+    margin: 100px auto;
+    width: 600px;
+    backdrop-filter: blur(15px);
+}
+
+b {
+    color: #fff;
+    text-align: center;
+}
